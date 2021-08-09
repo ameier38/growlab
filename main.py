@@ -30,6 +30,7 @@ class Switch:
             # NB: set both pins to 0V
             GPIO.output(self.gpio_pin_1, GPIO.LOW)
             GPIO.output(self.gpio_pin_2, GPIO.LOW)
+            iteration += 1
 
 def run():
     switch = Switch(gpio_pin_1=13, gpio_pin_2=11)
